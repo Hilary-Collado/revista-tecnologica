@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Revista Tecnológica</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Top Bar / Header -->
+    <!-- <header class="site-header">
+      <div class="wrap">
+        <div class="brand">
+          <h1 class="logo">Revista Tecnológica</h1>
+          <span class="motto">SAPERE ET VIVERE</span>
+        </div>
+
+        <-- Secondary menu (small, under the brand in desktop) --
+        <nav class="top-nav" aria-label="Secciones principales">
+          <ul>
+            <li><a href="#tendencias">Tendencias</a></li>
+            <li><a href="#ia">Inteligencia Artificial</a></li>
+            <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+            <li><a href="#calidad">Aseguramiento de Calidad</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header> -->
+
+    <header class="site-header">
+      <div class="wrap">
+        <div class="brand">
+          <h1 class="logo">Revista Tecnológica</h1>
+          <span class="motto">SAPERE ET VIVERE</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ⬇️ Navbar separado y pegajoso -->
+    <!-- <nav class="topbar" aria-label="Secciones principales">
+      <div class="wrap-header">
+        <ul class="topbar__menu">
+          <li><a href="#tendencias">Tendencias</a></li>
+          <li><a href="#ia">Inteligencia Artificial</a></li>
+          <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+          <li><a href="#calidad">Aseguramiento de Calidad</a></li>
+        </ul>
+      </div>
+    </nav> -->
+
+    <!-- NAVBAR pegajoso -->
+    <nav class="topbar" aria-label="Secciones principales">
+      <div class="wrap-header topbar__inner">
+        <!-- Botón hamburguesa (se muestra solo en móvil) -->
+        <button
+          class="topbar__toggle"
+          aria-expanded="false"
+          aria-controls="mainmenu"
+          aria-label="Abrir menú"
+        >
+          <span class="topbar__burger" aria-hidden="true"></span>
+        </button>
+
+        <!-- Menú -->
+        <ul id="mainmenu" class="topbar__menu">
+          <li><a href="#tendencias">Tendencias</a></li>
+          <li><a href="#ia">Inteligencia Artificial</a></li>
+          <li><a href="#ciberseguridad">Ciberseguridad</a></li>
+          <li><a href="#calidad">Aseguramiento de Calidad</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="">
+      <!-- Section title -->
+      <section class="trends wrap" id="tendencias">
+        <header class="section-head">
+          <h2>Últimas Tendencias</h2>
+          <p>Las noticias y análisis más relevantes del mundo tecnológico</p>
+        </header>
+
+        <!-- Cards grid -->
+        <div class="cards">
+          <!-- Card 1 -->
+          <article class="card">
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge badge-blue">Desarrollo Web</span>
+                <time datetime="2025-01-12">12 de Enero, 2025</time>
+              </div>
+
+              <h3 class="card-title">Tendencias en Desarrollo Web 2025</h3>
+
+              <p class="excerpt">
+                Explora las tecnologías y frameworks más relevantes que están
+                transformando el desarrollo web moderno. Desde React 19 hasta
+                las nuevas capacidades de TypeScript.
+              </p>
+
+              <a
+                href="#"
+                class="read-more"
+                aria-label="Leer más sobre Tendencias en Desarrollo Web 2025"
+              >
+                Leer más <span aria-hidden="true">›</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <div class="card-body">
+              <div class="meta">
+                <span class="badge badge-indigo">Infraestructura</span>
+                <time datetime="2025-01-12">12 de Enero, 2025</time>
+              </div>
+
+              <h3 class="card-title">El Auge de la Computación en Edge</h3>
+
+              <p class="excerpt">
+                Descubre cómo la computación en edge está revolucionando las
+                aplicaciones en tiempo real y mejorando la latencia en sistemas
+                distribuidos.
+              </p>
+
+              <a
+                href="#"
+                class="read-more"
+                aria-label="Leer más sobre El Auge de la Computación en Edge"
+              >
+                Leer más <span aria-hidden="true">›</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="ai-articles" id="ia">
+        <div class="ai-articles__inner wrap">
+          <header class="section-head section-head--ai">
+            <h2>Artículos sobre Inteligencia Artificial</h2>
+            <p>
+              Descubre las últimas investigaciones y aplicaciones prácticas de
+              IA
+            </p>
+          </header>
+
+          <div class="ai-list">
+            <!-- Item 1 -->
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Machine Learning: Del Concepto a la Producción
+                </h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-blue">Machine Learning</span>
+                  <time datetime="2025-01-10">10 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Una guía completa sobre cómo implementar modelos de machine
+                  learning en aplicaciones del mundo real.
+                </p>
+                <a href="#" class="read-more"
+                  >Leer más <span aria-hidden="true">›</span></a
+                >
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">
+                  Prompt Engineering: El Arte de la Comunicación con IA
+                </h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-indigo">IA Generativa</span>
+                  <time datetime="2025-01-08">8 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Aprende técnicas avanzadas para obtener mejores resultados de
+                  modelos de lenguaje grandes como ChatGPT y Claude.
+                </p>
+                <a href="#" class="read-more"
+                  >Leer más <span aria-hidden="true">›</span></a
+                >
+              </div>
+            </article>
+
+            <!-- Item 3 -->
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Ética en la Inteligencia Artificial</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-blue">Ética</span>
+                  <time datetime="2025-01-05">5 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Exploración crítica de los desafíos éticos en el desarrollo y
+                  despliegue de sistemas de inteligencia artificial.
+                </p>
+                <a href="#" class="read-more"
+                  >Leer más <span aria-hidden="true">›</span></a
+                >
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="ciberseguridad" class="sec sec--mint">
+        <div class="sec__inner">
+          <header class="section-head">
+            <h2>Artículos de Ciberseguridad</h2>
+            <p>
+              Buenas prácticas y estrategias para proteger datos, identidades y
+              sistemas.
+            </p>
+          </header>
+
+          <div class="ai-list">
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Zero Trust en la Práctica</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-green">Arquitectura</span>
+                  <time datetime="2025-01-11">11 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Cómo implementar un modelo Zero Trust paso a paso:
+                  segmentación, identidad, telemetría y automatización.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Guía Rápida de OWASP Top 10</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-indigo">Aplicaciones Web</span>
+                  <time datetime="2025-01-09">9 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Vulnerabilidades más comunes, ejemplos y mitigaciones con
+                  patrones seguros para backend y frontend.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Respuestas ante Incidentes 101</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-blue">Blue Team</span>
+                  <time datetime="2025-01-06">6 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Runbooks, contención, erradicación y recuperación. Métricas
+                  útiles: MTTR, MTTD y cobertura de telemetría.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="calidad" class="sec sec--sand">
+        <div class="sec__inner">
+          <header class="section-head">
+            <h2>Aseguramiento de Calidad</h2>
+            <p>
+              Pruebas, automatización y métricas para entregar software
+              confiable y escalable.
+            </p>
+          </header>
+
+          <div class="ai-list">
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Estrategia de Pruebas Full-Stack</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-amber">QA Strategy</span>
+                  <time datetime="2025-01-10">10 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Pirámide de pruebas: unitarias, integración, contrato, E2E y
+                  contract testing en microservicios.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">CI/CD con Gates de Calidad</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-blue">DevOps</span>
+                  <time datetime="2025-01-08">8 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Sonar, test coverage, escaneo SAST/DAST y bloqueo de releases
+                  hasta cumplir umbrales.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+
+            <article class="ai-item card card--wide">
+              <div class="card-body">
+                <h3 class="card-title">Automatización de UI sin Flakiness</h3>
+                <div class="meta meta--below-title">
+                  <span class="badge badge-indigo">Testing UI</span>
+                  <time datetime="2025-01-05">5 de Enero, 2025</time>
+                </div>
+                <p class="excerpt">
+                  Buenas prácticas con Playwright/Cypress: fixtures, waits
+                  inteligentes, datos deterministas y retries.
+                </p>
+                <a href="#" class="read-more">Leer más <span>›</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__top">
+          <!-- Columna 1: Marca -->
+          <div class="footer__col">
+            <h4 class="footer__title">Revista Tecnológica</h4>
+            <p class="footer__text">
+              Tu fuente confiable de información sobre tecnología, desarrollo e
+              innovación.
+            </p>
+          </div>
+
+          <!-- Columna 2: Navegación -->
+          <nav class="footer__col" aria-label="Navegación del sitio">
+            <h4 class="footer__title">Navegación</h4>
+            <ul class="footer__links">
+              <li><a href="#">Tendencias</a></li>
+              <li><a href="#">Inteligencia Artificial</a></li>
+              <li><a href="#">Ciberseguridad</a></li>
+            </ul>
+          </nav>
+
+          <!-- Columna 3: Legal -->
+          <nav class="footer__col" aria-label="Enlaces legales">
+            <h4 class="footer__title">Legal</h4>
+            <ul class="footer__links">
+              <li><a href="#">Política de Privacidad</a></li>
+              <li><a href="#">Términos de Servicio</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <hr class="footer__divider" />
+
+        <div class="footer__bottom">
+          <p class="footer__copy">
+            © 2025 Revista Tecnológica UTESA. Todos los derechos reservados.
+          </p>
+
+          <div class="footer__social" aria-label="Redes sociales">
+            <!-- X/Twitter -->
+            <a href="#" class="social" aria-label="X / Twitter">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M18.244 3H21l-6.53 7.46L22 21h-6.59l-4.61-5.58L5.4 21H3l7.06-8.06L2 3h6.7l4.17 5.02L18.244 3Zm-2.31 16h2.08L8.14 5H5.95l9.984 14Z"
+                />
+              </svg>
+            </a>
+            <!-- GitHub -->
+            <a href="#" class="social" aria-label="GitHub">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.58 2 12.26c0 4.52 2.87 8.35 6.85 9.71.5.1.68-.22.68-.49v-1.74c-2.79.62-3.38-1.37-3.38-1.37-.46-1.2-1.12-1.52-1.12-1.52-.92-.64.07-.63.07-.63 1.02.07 1.55 1.08 1.55 1.08.9 1.58 2.36 1.12 2.94.86.09-.67.35-1.12.63-1.37-2.23-.26-4.58-1.15-4.58-5.14 0-1.14.39-2.06 1.03-2.79-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.06a9.2 9.2 0 0 1 5 0c1.91-1.33 2.75-1.06 2.75-1.06.55 1.43.2 2.49.1 2.75.64.73 1.03 1.65 1.03 2.79 0 4-2.35 4.88-4.59 5.14.36.32.68.94.68 1.9v2.82c0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.26C22 6.58 17.52 2 12 2Z"
+                />
+              </svg>
+            </a>
+            <!-- LinkedIn -->
+            <a href="#" class="social" aria-label="LinkedIn">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  d="M6.94 8.98H4.22V20h2.72V8.98ZM5.58 3.75a1.84 1.84 0 1 0 0 3.68 1.84 1.84 0 0 0 0-3.68ZM19.79 20h-2.72v-5.7c0-1.36-.03-3.11-1.9-3.11-1.9 0-2.19 1.48-2.19 3.01V20h-2.71V8.98h2.6v1.5h.04c.36-.68 1.24-1.4 2.56-1.4 2.74 0 3.25 1.8 3.25 4.14V20Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <!-- <script>
+    // --- NAVBAR pegajoso: cambia a blanco al quedar fijo ---
+    (function () {
+      const nav = document.querySelector(".top-nav");
+      if (!nav) return;
+
+      // Umbral a partir del cual consideramos que está "pegado"
+      const navTop = nav.getBoundingClientRect().top + window.pageYOffset;
+
+      // Actualiza --nav-h para compensar en los anclajes
+      const setNavHeight = () => {
+        document.documentElement.style.setProperty(
+          "--nav-h",
+          nav.offsetHeight + "px"
+        );
+      };
+      setNavHeight();
+      window.addEventListener("resize", setNavHeight);
+
+      const onScroll = () => {
+        if (window.scrollY >= navTop - 1) nav.classList.add("is-stuck");
+        else nav.classList.remove("is-stuck");
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+    })();
+
+    // --- Scroll suave con compensación del navbar flotante ---
+    (function () {
+      const getOffset = () => {
+        const v = getComputedStyle(document.documentElement).getPropertyValue(
+          "--nav-h"
+        );
+        return parseInt(v) || 54;
+      };
+
+      document.querySelectorAll('.top-nav a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (!target) return;
+
+          e.preventDefault();
+          const offset = getOffset();
+          const y =
+            target.getBoundingClientRect().top + window.pageYOffset - offset;
+
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      });
+    })();
+  </script> -->
+
+  <!-- <script>
+    // Toggle "is-stuck" cuando el navbar se pega
+    (function () {
+      const nav = document.querySelector(".topbar");
+      if (!nav) return;
+
+      // Altura real para scroll-margin
+      const setNavH = () => {
+        document.documentElement.style.setProperty(
+          "--nav-h",
+          nav.offsetHeight + "px"
+        );
+      };
+      setNavH();
+      window.addEventListener("resize", setNavH);
+
+      // Punto donde el nav llega al top (después del header)
+      const navTop = nav.getBoundingClientRect().top + window.pageYOffset;
+
+      const onScroll = () => {
+        if (window.scrollY >= navTop - 1) nav.classList.add("is-stuck");
+        else nav.classList.remove("is-stuck");
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+
+      // Scroll suave con compensación exacta del navbar
+      const getOffset = () =>
+        parseInt(
+          getComputedStyle(document.documentElement).getPropertyValue("--nav-h")
+        ) || 56;
+      nav.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (!target) return;
+          e.preventDefault();
+          const y =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            getOffset();
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      });
+    })();
+  </script> -->
+
+  <script>
+    (function () {
+      const nav = document.querySelector(".topbar");
+      const menu = document.getElementById("mainmenu");
+      const toggleBtn = document.querySelector(".topbar__toggle");
+
+      if (!nav || !menu || !toggleBtn) return;
+
+      // Actualiza la variable --nav-h con la altura real de la barra
+      const setNavH = () => {
+        document.documentElement.style.setProperty(
+          "--nav-h",
+          nav.offsetHeight + "px"
+        );
+      };
+      setNavH();
+      window.addEventListener("resize", setNavH);
+
+      // Sticky: vuelve blanco al pegarse
+      const navTop = nav.getBoundingClientRect().top + window.pageYOffset;
+      const onScroll = () => {
+        if (window.scrollY >= navTop - 1) nav.classList.add("is-stuck");
+        else nav.classList.remove("is-stuck");
+      };
+      onScroll();
+      window.addEventListener("scroll", onScroll, { passive: true });
+
+      // Hamburguesa: abrir/cerrar
+      const closeMenu = () => {
+        nav.classList.remove("is-open");
+        toggleBtn.setAttribute("aria-expanded", "false");
+      };
+      const openMenu = () => {
+        nav.classList.add("is-open");
+        toggleBtn.setAttribute("aria-expanded", "true");
+      };
+
+      toggleBtn.addEventListener("click", () => {
+        const isOpen = nav.classList.contains("is-open");
+        isOpen ? closeMenu() : openMenu();
+      });
+
+      // Cerrar con ESC
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // Cerrar al hacer clic en un enlace y hacer scroll suave compensando la barra
+      const getOffset = () =>
+        parseInt(
+          getComputedStyle(document.documentElement).getPropertyValue("--nav-h")
+        ) || 56;
+
+      nav.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener("click", (e) => {
+          const id = a.getAttribute("href").slice(1);
+          const target = document.getElementById(id);
+          if (!target) return;
+
+          e.preventDefault();
+          closeMenu();
+
+          const y =
+            target.getBoundingClientRect().top +
+            window.pageYOffset -
+            getOffset();
+          window.scrollTo({ top: y, behavior: "smooth" });
+        });
+      });
+    })();
+  </script>
+</html>
