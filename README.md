@@ -1,9 +1,10 @@
 # 🚀 Portal Web: Revista Tecnológica - Aseguramiento de la Calidad
 
 **Integrantes:**
-* Mario Rosado (Líder QA y Documentador QA)
+* Mario Rosado (Líder QA)
 * Luis Mario Bonilla (Desarrollador HTML)
 * Enmanuel Bisonó (Diseñador CSS)
+* Hilary Collado (Documentador QA) 
 
 ## 🎯 Propósito del Proyecto
 El objetivo es diseñar y desarrollar un portal web para una revista tecnológica utilizando **HTML5** y **CSS3**, aplicando modelos de Aseguramiento de la Calidad (QA) definidos por el estándar **ISO/IEC 25010** y el marco de madurez **CMMI Nivel Inicial**.
